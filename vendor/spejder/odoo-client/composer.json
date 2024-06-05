@@ -1,0 +1,37 @@
+{
+    "name": "spejder/odoo-client",
+    "type": "library",
+    "description": "A PHP Client for Odoo",
+    "keywords": [],
+    "homepage": "https://github.com/spejder/odoo-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacob Steringa",
+            "email": "jacobsteringa@gmail.com"
+        },
+        {
+            "name": "Arne Jørgensen",
+            "email": "arne@arnested.dk"
+        }
+    ],
+    "require": {
+        "laminas/laminas-xmlrpc": "^2.9",
+        "laminas/laminas-http": "^2.12",
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+	    "Spejder\\": "src/"
+	}
+    },
+    "replace": {
+        "jacobsteringa/odoo-client": "<=0.3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1",
+        "squizlabs/php_codesniffer": "^3.5",
+        "phpstan/phpstan-deprecation-rules": "^1",
+        "phpstan/phpstan-symfony": "^1"
+    }
+}
